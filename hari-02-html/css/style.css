@@ -1,4 +1,58 @@
 /* ===== 1. Variabel ===== */
+/* Smooth Scroll untuk lompatan section */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Floating Navigation Container */
+.floating-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(31, 41, 55, 0.85); /* Menggunakan warna gelap dengan transparansi */
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.floating-nav a {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.floating-nav a:hover {
+  background: var(--warna-utama);
+  text-decoration: none;
+  transform: translateX(-3px);
+}
+
+/* Responsif untuk layar HP kecil */
+@media (max-width: 600px) {
+  .floating-nav {
+    flex-direction: row;
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(50%);
+    width: max-content;
+    padding: 6px 10px;
+  }
+  
+  .floating-nav a {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}
+
 :root {
   --warna-utama: #0d6efd;
   --warna-gelap: #1f2937;
@@ -228,3 +282,5 @@ thead th {
 tbody tr:nth-child(even) {
   background: #f3f4f6;
 }
+
+
