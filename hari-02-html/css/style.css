@@ -309,3 +309,132 @@ tbody tr:nth-child(even) {
   margin-bottom: 0.5rem;
   color: var(--warna-abu);
 }
+
+/* ===== Styling Khusus Form Pendaftaran ===== */
+/* ===== Styling Khusus Form Pendaftaran ===== */
+body {
+  background: var(--warna-terang);
+  padding: 2rem 1rem;
+}
+
+/* Membungkus form agar berada di tengah dan berbentuk kotak kartu yang rapi */
+form {
+  max-width: 650px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--warna-gelap);
+  font-size: 1.75rem;
+}
+
+/* Fieldset dan Legend */
+fieldset {
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  background: #fafafa;
+}
+
+legend {
+  font-weight: 600;
+  color: var(--warna-utama);
+  padding: 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* Label dan Input spacing */
+form p {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--warna-gelap);
+  font-size: 0.95rem;
+}
+
+/* Styling untuk Input, Select, dan Textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font: inherit;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efek Fokus pada Form */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--warna-utama);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* Radio Button dan Checkbox Penyelarasan */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+  accent-color: var(--warna-utama);
+}
+
+/* Khusus label pilihan radio & checkbox agar sejajar horizontal jika diperlukan */
+fieldset label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+/* Tombol Aksi (Submit & Reset) */
+button[type="submit"] {
+  background: var(--warna-utama);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  margin-right: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+button[type="reset"] {
+  background: #6c757d;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button[type="reset"]:hover {
+  background: #5c636a;
+  transform: translateY(-2px);
+}
