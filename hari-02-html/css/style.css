@@ -283,4 +283,29 @@ tbody tr:nth-child(even) {
   background: #f3f4f6;
 }
 
+/*jadwal stylecss*/
+/* Styling untuk Aturan Kelas */
+.aturan-kelas {
+  max-width: 90%;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
 
+.aturan-kelas h3 {
+  margin-bottom: 0.75rem;
+  color: var(--warna-gelap);
+  font-size: 1.25rem;
+}
+
+.aturan-kelas ol {
+  padding-left: 1.5rem;
+}
+
+.aturan-kelas li {
+  margin-bottom: 0.5rem;
+  color: var(--warna-abu);
+}
