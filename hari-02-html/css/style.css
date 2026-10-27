@@ -438,3 +438,8 @@ button[type="reset"]:hover {
   background: #5c636a;
   transform: translateY(-2px);
 }
+
+.social-links a i {
+  margin-right: 6px; /* Memberi jarak antara ikon dan teks */
+  font-size: 1.1rem;   /* Memperbesar sedikit ukuran ikonnya */
+}
